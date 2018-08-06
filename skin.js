@@ -4977,37 +4977,37 @@ function pano2vrSkin(player,base) {
 				return me.hotspot.url.substr(1, me.hotspot.url.length - 2);
 			}
 			this.__div.onclick=function () {
-				me.skin._information.ggVisible = !me.skin._information.ggVisible;
-				me.skin._information.style[domTransition]='none';
-				me.skin._information.style.visibility=((me.skin._information.ggVisible)&&(Number(me.skin._information.style.opacity)>0||!me.skin._information.style.opacity))?'inherit':'hidden';
-				me.skin._info_title.ggText="<b>"+me.hotspot.title+"<\/b>";
-				me.skin._info_title__text.innerHTML=me.skin._info_title.ggText;
-				if (me.skin._info_title.ggUpdateText) {
-					me.skin._info_title.ggUpdateText=function() {
-						var hs="<b>"+me.hotspot.title+"<\/b>";
-						if (hs!=this.ggText) {
-							this.ggText=hs;
-							this.ggTextDiv.innerHTML=hs;
-							if (this.ggUpdatePosition) this.ggUpdatePosition();
-						}
-					}
-				}
-				me.skin._info_text_body.ggText=me.hotspot.description;
-				me.skin._info_text_body__text.innerHTML=me.skin._info_text_body.ggText;
-				if (me.skin._info_text_body.ggUpdateText) {
-					me.skin._info_text_body.ggUpdateText=function() {
-						var hs=me.hotspot.description;
-						if (hs!=this.ggText) {
-							this.ggText=hs;
-							this.ggTextDiv.innerHTML=hs;
-							if (this.ggUpdatePosition) this.ggUpdatePosition();
-						}
-					}
-				}
-				me.skin._screentint.style[domTransition]='none';
-				me.skin._screentint.style.visibility=(Number(me.skin._screentint.style.opacity)>0||!me.skin._screentint.style.opacity)?'inherit':'hidden';
-				me.skin._screentint.ggVisible=true;
-				me.skin.hotspotProxyClick(me.hotspot.id);
+				// me.skin._information.ggVisible = !me.skin._information.ggVisible;
+				// me.skin._information.style[domTransition]='none';
+				// me.skin._information.style.visibility=((me.skin._information.ggVisible)&&(Number(me.skin._information.style.opacity)>0||!me.skin._information.style.opacity))?'inherit':'hidden';
+				// me.skin._info_title.ggText="<b>"+me.hotspot.title+"<\/b>";
+				// me.skin._info_title__text.innerHTML=me.skin._info_title.ggText;
+				// if (me.skin._info_title.ggUpdateText) {
+				// 	me.skin._info_title.ggUpdateText=function() {
+				// 		var hs="<b>"+me.hotspot.title+"<\/b>";
+				// 		if (hs!=this.ggText) {
+				// 			this.ggText=hs;
+				// 			this.ggTextDiv.innerHTML=hs;
+				// 			if (this.ggUpdatePosition) this.ggUpdatePosition();
+				// 		}
+				// 	}
+				// }
+				// me.skin._info_text_body.ggText=me.hotspot.description;
+				// me.skin._info_text_body__text.innerHTML=me.skin._info_text_body.ggText;
+				// if (me.skin._info_text_body.ggUpdateText) {
+				// 	me.skin._info_text_body.ggUpdateText=function() {
+				// 		var hs=me.hotspot.description;
+				// 		if (hs!=this.ggText) {
+				// 			this.ggText=hs;
+				// 			this.ggTextDiv.innerHTML=hs;
+				// 			if (this.ggUpdatePosition) this.ggUpdatePosition();
+				// 		}
+				// 	}
+				// }
+				// me.skin._screentint.style[domTransition]='none';
+				// me.skin._screentint.style.visibility=(Number(me.skin._screentint.style.opacity)>0||!me.skin._screentint.style.opacity)?'inherit':'hidden';
+				// me.skin._screentint.ggVisible=true;
+				// me.skin.hotspotProxyClick(me.hotspot.id);
 			}
 			this.__div.onmouseover=function () {
 				me.player.setActiveHotspot(me.hotspot);
