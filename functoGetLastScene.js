@@ -88,6 +88,11 @@ function loadScene1() {
 	  pushNode("{node96}",{ "tilt": skin.player.getTilt(), "pan": skin.player.getPan(),"hfov": skin.player.getFov()});
 	skin.player.openNext("{node96}","");
 	skin._showpam.click()
+	}
+	function loadScene116() {
+	  pushNode("{node116}",{ "tilt": skin.player.getTilt(), "pan": skin.player.getPan(),"hfov": skin.player.getFov()});
+	skin.player.openNext("{node116}","");
+	skin._showpam.click()
   }
 
 
