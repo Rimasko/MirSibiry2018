@@ -1902,17 +1902,23 @@
     <hotspots width="180" height="20" wordwrap="1">
       <label border="1" backgroundalpha="1" enabled="1" borderalpha="1" width="180" backgroundcolor="0xffffff" textalpha="1" height="20" textcolor="0x000000" background="1" borderradius="1" wordwrap="1" bordercolor="0x000000"/>
       <polystyle backgroundalpha="0.2509803921568627" borderalpha="1" backgroundcolor="0x0000ff" mode="0" handcursor="1" bordercolor="0x0000ff"/>
+       
+      <hotspot url="{node103}" pan="-11.19" id="Point11" tilt="-78.81" title="Перекресток" target="37.8593/0.922155/70" skinid="ht_node" description=""/>
+       <hotspot url="{node71}" pan="-27.8" id="Point02" tilt="-53.39" title="Город мастеров" target="171.288/-61.9578/70" skinid="ht_node" description=""/>
+      <hotspot url="{node79}" pan="-27.24" id="Point09" tilt="-26.19" title="Беседка" target="-4.54092/-1.20636/70" skinid="ht_node" description=""/>
+      
+      <hotspot url="{node110}" pan="-37.78" id="Point10" tilt="-21.34" title="" target="-108.431/2.51271/70" skinid="ht_node" description=""/>
+    
+      
       <hotspot url="{node70}" pan="29.08" id="Point01" tilt="-36.61" title="Главная сцена" target="66.0991/-48.7501/70" skinid="ht_node" description=""/>
-      <hotspot url="{node71}" pan="-27.8" id="Point02" tilt="-53.39" title="Город мастеров" target="171.288/-61.9578/70" skinid="ht_node" description=""/>
       <hotspot url="{node72}" pan="-106.46" id="Point03" tilt="-24.87" title="Журавленок" target="3.16378/-26.6528/70" skinid="ht_node" description=""/>
       <hotspot url="{node73}" pan="-158.74" id="Point04" tilt="-20.65" title="Обрядовая поляна" target="-156.959/-28.7643/70" skinid="ht_node" description=""/>
       <hotspot url="{node74}" pan="171.18" id="Point05" tilt="-17.16" title="Палаточный городок" target="-9.27101/-22.293/70" skinid="ht_node" description=""/>
       <hotspot url="{node78}" pan="71.63" id="Point06" tilt="-64.09" title="Трапезная" target="-174.854/-1.23183/70" skinid="ht_node" description=""/>
+      
       <hotspot url="{node1}" pan="-15.67" id="Point07" tilt="-14.2" title="Музей" target="-51.2574/-13.349/70" skinid="ht_node" description=""/>
       <hotspot url="{node75}" pan="-33.45" id="Point08" tilt="-10.64" title="Главная площадь" target="166.839/-19.0165/70" skinid="ht_node" description=""/>
-      <hotspot url="{node79}" pan="-27.24" id="Point09" tilt="-26.19" title="Беседка" target="-4.54092/-1.20636/70" skinid="ht_node" description=""/>
-      <hotspot url="{node110}" pan="-37.78" id="Point10" tilt="-21.34" title="" target="-108.431/2.51271/70" skinid="ht_node" description=""/>
-      <hotspot url="{node103}" pan="-11.19" id="Point11" tilt="-78.81" title="Перекресток" target="37.8593/0.922155/70" skinid="ht_node" description=""/>
+      
       <hotspot url="{node117}" pan="177.25" id="Point12" tilt="-26.51" title="Выход с рынка" target="-78.7213/-2.58284/70" skinid="ht_node" description=""/>
       <hotspot url="{node96}" pan="-168.86" id="Point13" tilt="-43.88" title="Рынок" target="36.1421/-1.75683/70" skinid="ht_node" description=""/>
       <hotspot url="{node116}" pan="44.16" id="Point14" tilt="-30.43" title="Енисейская Сибирь" target="" skinid="ht_node" description=""/>
