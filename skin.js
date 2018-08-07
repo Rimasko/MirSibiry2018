@@ -1179,7 +1179,7 @@ function pano2vrSkin(player,base) {
 				(me.player.getIsMobile() == true)
 			)
 			{
-				newLogicStateVisible = 0;
+				newLogicStateVisible = -1;
 			}
 			else {
 				newLogicStateVisible = -1;
@@ -3371,7 +3371,7 @@ function pano2vrSkin(player,base) {
 		hs+='position : absolute;';
 		hs+='top : 20%;';
 		hs+='visibility : inherit;';
-		hs+='width :  8vw;';
+		hs+='width :  6vw;';
 		this._obshi.setAttribute('style',hs);
 		this._obshi.style[domTransform + 'Origin']='50% 50%';
 		me._obshi.ggIsActive=function() {
@@ -3622,11 +3622,11 @@ this._market.className='ggskin ggskin_button ';
 this._market.ggType='button';
 hs ='';
 hs+='height : 1.5vw;';
-hs+='left : 25%;';
+hs+='left : 30%;';
 hs+='position : absolute;';
-hs+='top : 52%;';
+hs+='top : 53%;';
 hs+='visibility : inherit;';
-hs+='width : 6vw;';
+hs+='width : 4.5vw;';
 this._market.setAttribute('style',hs);
 this._market.style[domTransform + 'Origin']='50% 50%';
 me._market.ggIsActive=function() {
