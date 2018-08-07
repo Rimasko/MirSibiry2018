@@ -1665,7 +1665,7 @@
       <hotspot url="{node66}" pan="-109.55" id="Point03" tilt="-2.98" title="" target="85.3493/-0.341426/70" skinid="ht_node" description=""/>
       <hotspot url="" pan="171.8" id="Point04" tilt="2.16" title="Административное здание." target="" skinid="ht_info" description=""/>
       <hotspot url="{node1}" pan="-99.5" id="Point05" tilt="12.62" title="Музей" target="17.8797/-22.6155/70" skinid="ht_GoFly" description=""/>
-      <hotspot url="{node75}" pan="130" id="Point06" tilt="6.95" title="Площадь" target="" skinid="ht_node" description=""/>
+      <hotspot url="{node75}" pan="130" id="Point06" tilt="6.95" title="Площадь" target="" skinid="ht_GoFly" description=""/>
       <hotspot url="" pan="-136.78" id="Point07" tilt="1.29" title="Дом А. Лучинского1878 г. Перевезен из с. Каптырево Шушенского района. Служебное помещение." target="" skinid="ht_info" description=""/>
       <hotspot url="{node102}" pan="121.49" id="Point08" tilt="-4.53" title="" target="39.1234/0.283772/70" skinid="ht_node" description=""/>
     </hotspots>
@@ -1947,7 +1947,7 @@
       <label border="1" backgroundalpha="1" enabled="1" borderalpha="1" width="180" backgroundcolor="0xffffff" textalpha="1" height="20" textcolor="0x000000" background="1" borderradius="1" wordwrap="1" bordercolor="0x000000"/>
       <polystyle backgroundalpha="0.2509803921568627" borderalpha="1" backgroundcolor="0x0000ff" mode="0" handcursor="1" bordercolor="0x0000ff"/>
       <hotspot url="{node77}" pan="-161.79" id="Point01" tilt="27.93" title="Общий вид" target="-146.658/-11.7023/70" skinid="ht_Obsh" description=""/>
-      <hotspot url="{node70}" pan="-51.35" id="Point02" tilt="7.32" title="Главная сцена" target="57.586/-6.81513/70" skinid="ht_node" description=""/>
+      <hotspot url="{node70}" pan="-51.35" id="Point02" tilt="7.32" title="Главная сцена" target="57.586/-6.81513/70" skinid="ht_GoFly" description=""/>
       <hotspot url="{node104}" pan="-169.77" id="Point03" tilt="-11.06" title="" target="103.153/1.87495/70" skinid="ht_node" description=""/>
       <hotspot url="{node105}" pan="-167.94" id="Point04" tilt="-3.41" title="" target="" skinid="ht_node" description=""/>
     </hotspots>
@@ -2671,7 +2671,7 @@
     <hotspots width="180" height="20" wordwrap="1">
       <label border="1" backgroundalpha="1" enabled="1" borderalpha="1" width="180" backgroundcolor="0xffffff" textalpha="1" height="20" textcolor="0x000000" background="1" borderradius="1" wordwrap="1" bordercolor="0x000000"/>
       <polystyle backgroundalpha="0.2509803921568627" borderalpha="1" backgroundcolor="0x0000ff" mode="0" handcursor="1" bordercolor="0x0000ff"/>
-      <hotspot url="{node70}" pan="133.3" id="Point01" tilt="20.8" title="Главная сцена" target="" skinid="ht_node" description=""/>
+      <hotspot url="{node70}" pan="133.3" id="Point01" tilt="20.8" title="Главная сцена" target="" skinid="ht_GoFly" description=""/>
       <hotspot url="{node113}" pan="97.71" id="Point02" tilt="-2.42" title="" target="89.6869/-0.701645/70" skinid="ht_node" description=""/>
       <hotspot url="{node114}" pan="-129.29" id="Point03" tilt="-2.6" title="" target="140.717/1.06261/70" skinid="ht_node" description=""/>
     </hotspots>
@@ -2768,7 +2768,7 @@
       <label border="1" backgroundalpha="1" enabled="1" borderalpha="1" width="180" backgroundcolor="0xffffff" textalpha="1" height="20" textcolor="0x000000" background="1" borderradius="1" wordwrap="1" bordercolor="0x000000"/>
       <polystyle backgroundalpha="0.2509803921568627" borderalpha="1" backgroundcolor="0x0000ff" mode="0" handcursor="1" bordercolor="0x0000ff"/>
       <hotspot url="{node113}" pan="167.13" id="Point01" tilt="-1.63" title="" target="0/0/70" skinid="ht_node" description=""/>
-      <hotspot url="{node70}" pan="152.45" id="Point02" tilt="13.15" title="Главная сцена" target="25.8201/-6.06777/70" skinid="ht_node" description=""/>
+      <hotspot url="{node70}" pan="152.45" id="Point02" tilt="13.15" title="Главная сцена" target="25.8201/-6.06777/70" skinid="ht_GoFly" description=""/>
       <hotspot url="{node81}" pan="92.25" id="Point03" tilt="-1.06" title="" target="-54.5088/-4.21867/70" skinid="ht_node" description=""/>
       <hotspot url="{node112}" pan="109.22" id="Point04" tilt="-1.96" title="" target="57.1685/1.72857/70" skinid="ht_node" description=""/>
       <hotspot url="{node116}" pan="-126.34" id="Point05" tilt="-0.18" title="Енисейская Сибирь" target="-86.5081/0.105804/70" skinid="ht_node" description=""/>
