@@ -1894,9 +1894,9 @@
       <preview color="0x808080" strip="1"/>
     </input>
     <view pannorth="0" fovmode="0">
-      <start fov="70" pan="0" tilt="0"/>
+      <start fov="135" pan="-63.919" tilt="-90"/>
       <min fov="5" pan="0" tilt="-90"/>
-      <max fov="120" pan="360" tilt="90"/>
+      <max fov="140" pan="360" tilt="90"/>
     </view>
     <userdata latitude="" author="" copyright="" longitude="" datetime="" source="" title="" info="" comment="" tags="GoogleDownload" description=""/>
     <hotspots width="180" height="20" wordwrap="1">
