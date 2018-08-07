@@ -2666,7 +2666,7 @@ function pano2vrSkin(player, base) {
 		hs += 'overflow: hidden;';
 		this._datetime__text.setAttribute('style', hs);
 		this._datetime.ggUpdateText = function () {
-			var hs = me.ggUserdata.datetime;
+			var hs ="";
 			if (hs != this.ggText) {
 				this.ggText = hs;
 				this.ggTextDiv.innerHTML = hs;
