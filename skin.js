@@ -2501,7 +2501,7 @@ function pano2vrSkin(player, base) {
 		hs += 'overflow: hidden;';
 		this._title__text.setAttribute('style', hs);
 		this._title.ggUpdateText = function () {
-			var hs = "<b>" + me.ggUserdata.title + "<\/b>";
+			var hs = "<b>Панорама Мир Сибири <\/b>";
 			if (hs != this.ggText) {
 				this.ggText = hs;
 				this.ggTextDiv.innerHTML = hs;
@@ -2547,7 +2547,7 @@ function pano2vrSkin(player, base) {
 		hs += 'left: 0px;';
 		hs += 'top:  0px;';
 		hs += 'width: 218px;';
-		hs += 'height: 20px;';
+		hs += 'height: 100px;';
 		hs += 'border: 0px solid #000000;';
 		hs += 'color: rgba(255,255,255,1);';
 		hs += 'text-align: left;';
@@ -2556,7 +2556,7 @@ function pano2vrSkin(player, base) {
 		hs += 'overflow: hidden;';
 		this._description__text.setAttribute('style', hs);
 		this._description.ggUpdateText = function () {
-			var hs = me.ggUserdata.description;
+			var hs = "Панорама создана компанией <br> ITEO";
 			if (hs != this.ggText) {
 				this.ggText = hs;
 				this.ggTextDiv.innerHTML = hs;
@@ -2902,7 +2902,7 @@ function pano2vrSkin(player, base) {
 		hs += 'overflow: hidden;';
 		hs += 'overflow-y: auto;';
 		this._info_text_body__text.setAttribute('style', hs);
-		this._info_text_body__text.innerHTML = "";
+		this._info_text_body__text.innerHTML = "asasfasf";
 		this._info_text_body.appendChild(this._info_text_body__text);
 		me._info_text_body.ggIsActive = function () {
 			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
@@ -2949,7 +2949,7 @@ function pano2vrSkin(player, base) {
 		hs += 'padding: 0px 1px 0px 1px;';
 		hs += 'overflow: hidden;';
 		this._info_title__text.setAttribute('style', hs);
-		this._info_title__text.innerHTML = "";
+		this._info_title__text.innerHTML = "<div style=' background: white; width: 100%; height: 100%;'></div>";
 		this._info_title.appendChild(this._info_title__text);
 		me._info_title.ggIsActive = function () {
 			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
