@@ -347,7 +347,7 @@
       <polystyle backgroundalpha="0.2509803921568627" borderalpha="1" backgroundcolor="0x0000ff" mode="0" handcursor="1" bordercolor="0x0000ff"/>
       <hotspot url="{node16}" pan="-130.13" id="Point01" tilt="-7.25" title="" target="-95.1547/-10.6328/66.7555" skinid="ht_node" description=""/>
       <hotspot url="{node15}" pan="-173.64" id="Point02" tilt="-9.75" title="" target="57.9524/-0.0367641/70" skinid="ht_node" description=""/>
-      <hotspot url="" pan="161.24" id="Point03" tilt="-4.24" title="" target="_blank" skinid="ht_url" description=""/>
+      <hotspot url="{node20}" pan="161.24" id="Point03" tilt="-4.24" title="" target="_blank" skinid="ht_node" description=""/>
       <hotspot url="{node11}" pan="3.83" id="Point04" tilt="-3.57" title="" target="143.983/-0.954691/70" skinid="ht_node" description=""/>
       <hotspot url="{node1}" pan="70.33" id="Point05" tilt="13.04" title="" target="-109.547/-18.8191/70" skinid="ht_GoFly" description=""/>
     </hotspots>
@@ -690,7 +690,7 @@
       <hotspot url="{node27}" pan="-45.32" id="Point02" tilt="-14.13" title="" target="63.8644/-6.67748/70" skinid="ht_node" description=""/>
       <hotspot url="{node26}" pan="20.98" id="Point03" tilt="-0.17" title="" target="54.1364/-0.71527/70" skinid="ht_node" description=""/>
       <hotspot url="{node43}" pan="118.06" id="Point04" tilt="-0.09" title="" target="-69.2632/-2.96538/70" skinid="ht_node" description=""/>
-      <hotspot url="" pan="147.97" id="Point05" tilt="0.98" title="Дом Н. Аликина" target="_blank" skinid="ht_url" description="Конец XIX в. Открытое хранение музейного фонда."/>
+      <hotspot url="" pan="147.97" id="Point05" tilt="0.98" title="Дом Н. Аликина" target="_blank" skinid="ht_info" description="Конец XIX в. Открытое хранение музейного фонда."/>
       <hotspot url="{node1}" pan="100.93" id="Point06" tilt="12.72" title="Музей" target="-105.726/-11.3284/70" skinid="ht_GoFly" description=""/>
     </hotspots>
     <media/>
