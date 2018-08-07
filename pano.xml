@@ -2536,7 +2536,7 @@
       <label border="1" backgroundalpha="1" enabled="1" borderalpha="1" width="180" backgroundcolor="0xffffff" textalpha="1" height="20" textcolor="0x000000" background="1" borderradius="1" wordwrap="1" bordercolor="0x000000"/>
       <polystyle backgroundalpha="0.2509803921568627" borderalpha="1" backgroundcolor="0x0000ff" mode="0" handcursor="1" bordercolor="0x0000ff"/>
       <hotspot url="{node104}" pan="87.1" id="Point01" tilt="-1.92" title="" target="-70.1117/2.05577/70" skinid="ht_node" description=""/>
-      <hotspot url="" pan="89.48" id="Point02" tilt="7.62" title="" target="_blank" skinid="ht_url" description=""/>
+      <hotspot url="{node78}" pan="89.48" id="Point02" tilt="7.62" title="" target="_blank" skinid="ht_GoFly" description=""/>
       <hotspot url="{node103}" pan="-55.58" id="Point03" tilt="-3.43" title="Перекресток" target="" skinid="ht_node" description=""/>
     </hotspots>
     <media/>
