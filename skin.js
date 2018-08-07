@@ -4524,7 +4524,7 @@ function pano2vrSkin(player, base) {
 			me.player.openNext("{node72}", "");
 		}
 		this._guavlenok.onmouseover = function () {
-			pushNode("{node72}", { "tilt": me.player.getTilt(), "pan": me.player.getPan(), "hfov": me.player.getFov() });
+			
 
 			me.elementMouseOver['guavlenok'] = true;
 		}
