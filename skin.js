@@ -2065,19 +2065,8 @@ function pano2vrSkin(player, base) {
 			return me.player.getCurrentNode();
 		}
 		this._gotohome.onclick = function () {
-			var GoprevPoint = getLastScene();
-			if (GoprevPoint != null) {
-				if (GoprevPoint.XYZOr == null) {
-					me.player.openNext("{node77}", "");
-				}
-				else {
-					me.player.openNext("{node77}", GoprevPoint.XYZOr.pan + "\/" + GoprevPoint.XYZOr.tilt + "\/" + GoprevPoint.XYZOr.hfov);
-				}
-				nodes.pop();
-			}
-			else {
-				me.player.openNext("{node77}", "");
-			}
+			pushNode("{node77}", { "tilt": me.player.getTilt(), "pan": me.player.getPan(), "hfov": me.player.getFov() });
+		   me.player.openNext("{node77}", "");
 		}
 		this._gotohome.onmouseover = function () {
 			me._gotohome__img.src = basePath + 'images/gotohome__o.png';
@@ -3562,7 +3551,7 @@ function pano2vrSkin(player, base) {
 		hs += 'padding: 0px 1px 0px 1px;';
 		hs += 'overflow: hidden;';
 		this._palatochname__text.setAttribute('style', hs);
-		this._palatochname__text.innerHTML = "\u041f\u0430\u043b\u0430\u0442\u043e\u0447\u043d\u044b\u0439 \u0433\u043e\u0440\u043e\u0434\u043e\u043a";
+		this._palatochname__text.innerHTML = "Палаточный лагерь";
 		this._palatochname.appendChild(this._palatochname__text);
 		me._palatochname.ggIsActive = function () {
 			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
@@ -4106,6 +4095,264 @@ function pano2vrSkin(player, base) {
 		this.besedka.appendChild(this.besedkaName);
 		this._chemamap.appendChild(this.besedka);
 
+		
+		this._trapes = document.createElement('div');
+		this._trapes__img = document.createElement('img');
+		this._trapes__img.className = 'ggskin ggskin_button';
+		this._trapes__img.setAttribute('src', basePath + 'MobilemapIconstAndText/Trapeznaya_txt.png');
+		this._trapes__img.setAttribute('style', 'position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;pointer-events:none;');
+		this._trapes__img.className = 'ggskin ggskin_button';
+		this._trapes__img['ondragstart'] = function () { return false; };
+		me.player.checkLoaded.push(this._trapes__img);
+		this._trapes.appendChild(this._trapes__img);
+		this._trapes.ggId = "Trapes";
+		this._trapes.ggParameter = { rx: 0, ry: 0, a: 0, sx: 1, sy: 1 };
+		this._trapes.ggVisible = true;
+		this._trapes.className = 'ggskin ggskin_button ';
+		this._trapes.ggType = 'button';
+		hs = '';
+		hs += 'height : 1.5vw;';
+		hs += 'left : 37%;';
+		hs += 'position : absolute;';
+		hs += 'top : 38%;';
+		hs += 'visibility : inherit;';
+		hs += 'width : 6vw;';
+		this._trapes.setAttribute('style', hs);
+		this._trapes.style[domTransform + 'Origin'] = '50% 50%';
+		me._trapes.ggIsActive = function () {
+			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
+				return this.parentNode.ggIsActive();
+			}
+			return false;
+		}
+		me._trapes.ggElementNodeId = function () {
+			if ((this.parentNode) && (this.parentNode.ggElementNodeId)) {
+				return this.parentNode.ggElementNodeId();
+			}
+			return me.player.getCurrentNode();
+		}
+		this._trapes.onclick = function () {
+			me._chemamap.ggVisible = !me._chemamap.ggVisible;
+			me._chemamap.style[domTransition] = 'none';
+			me._chemamap.style.visibility = ((me._chemamap.ggVisible) && (Number(me._chemamap.style.opacity) > 0 || !me._chemamap.style.opacity)) ? 'inherit' : 'hidden';
+
+			pushNode("{node76}", { "tilt": me.player.getTilt(), "pan": me.player.getPan(), "hfov": me.player.getFov() });
+
+			me.player.openNext("{node78}", "");
+		}
+		this._trapes.onmouseover = function () {
+			me.elementMouseOver['trapes'] = true;
+		}
+		this._trapes.onmouseout = function () {
+			me._trapesname.style[domTransition] = 'none';
+			me._trapesname.style.visibility = 'hidden';
+			me._trapesname.ggVisible = false;
+			me.elementMouseOver['trapes'] = false;
+		}
+		this._trapes.ontouchend = function () {
+			me.elementMouseOver['trapes'] = false;
+		}
+		this._trapes.ggUpdatePosition = function () {
+			this.style[domTransition] = 'none';
+			if (this.parentNode) {
+				var w = this.parentNode.offsetWidth;
+				this.style.left = (this.ggLeft - 0 + w / 2) + 'px';
+				var h = this.parentNode.offsetHeight;
+				this.style.top = (this.ggTop - 0 + h / 2) + 'px';
+			}
+		}
+		this._trapesname = document.createElement('div');
+		this._trapesname__text = document.createElement('div');
+		this._trapesname.className = 'ggskin ggskin_textdiv';
+		this._trapesname.ggTextDiv = this._trapesname__text;
+		this._trapesname.ggId = "Trapesname";
+		this._trapesname.ggLeft = -53;
+		this._trapesname.ggTop = -57;
+		this._trapesname.ggParameter = { rx: 0, ry: 0, a: 0, sx: 1, sy: 1 };
+		this._trapesname.ggVisible = false;
+		this._trapesname.className = 'ggskin ggskin_text ';
+		this._trapesname.ggType = 'text';
+		hs = '';
+		hs += 'height : 27px;';
+		hs += 'left : -53px;';
+		hs += 'position : absolute;';
+		hs += 'top : -57px;';
+		hs += 'visibility : hidden;';
+		hs += 'width : 108px;';
+		this._trapesname.setAttribute('style', hs);
+		this._trapesname.style[domTransform + 'Origin'] = '50% 50%';
+		hs = 'position:absolute;';
+		hs += 'left: 0px;';
+		hs += 'top:  0px;';
+		hs += 'width: 108px;';
+		hs += 'height: auto;';
+		hs += 'background: #ffffff;';
+		hs += 'background: rgba(255,255,255,0.784314);';
+		hs += 'border: 1px solid #000000;';
+		hs += 'border: 1px solid rgba(0,0,0,0.392157);';
+		hs += cssPrefix + 'background-clip: padding-box;';
+		hs += 'background-clip: padding-box;';
+		hs += 'color: #000000;';
+		hs += 'text-align: center;';
+		hs += 'white-space: pre-wrap;';
+		hs += 'padding: 0px 1px 0px 1px;';
+		hs += 'overflow: hidden;';
+		this._trapesname__text.setAttribute('style', hs);
+		this._trapesname__text.innerHTML = "\u0422\u0440\u0430\u043f\u0435\u0437\u043d\u0430\u044f";
+		this._trapesname.appendChild(this._trapesname__text);
+		me._trapesname.ggIsActive = function () {
+			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
+				return this.parentNode.ggIsActive();
+			}
+			return false;
+		}
+		me._trapesname.ggElementNodeId = function () {
+			if ((this.parentNode) && (this.parentNode.ggElementNodeId)) {
+				return this.parentNode.ggElementNodeId();
+			}
+			return me.player.getCurrentNode();
+		}
+		this._trapesname.ggUpdatePosition = function () {
+			this.style[domTransition] = 'none';
+			if (this.parentNode) {
+				var w = this.parentNode.offsetWidth;
+				this.style.left = (this.ggLeft - 0 + w / 2) + 'px';
+				var h = this.parentNode.offsetHeight;
+				this.style.top = (this.ggTop - 0 + h / 2) + 'px';
+			}
+		}
+		this._trapes.appendChild(this._trapesname);
+		this._chemamap.appendChild(this._trapes);
+
+		this._market = document.createElement('div');
+		this._market__img = document.createElement('img');
+		this._market__img.className = 'ggskin ggskin_button';
+		this._market__img.setAttribute('src', basePath + 'MobilemapIconstAndText/Market_txt.png');
+		this._market__img.setAttribute('style', 'position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;pointer-events:none;');
+		this._market__img.className = 'ggskin ggskin_button';
+		this._market__img['ondragstart'] = function () { return false; };
+		me.player.checkLoaded.push(this._market__img);
+		this._market.appendChild(this._market__img);
+		this._market.ggId = "PalatochGor";
+		this._market.ggParameter = { rx: 0, ry: 0, a: 0, sx: 1, sy: 1 };
+		this._market.ggVisible = true;
+		this._market.className = 'ggskin ggskin_button ';
+		this._market.ggType = 'button';
+		hs = '';
+		hs += 'height : 1.5vw;';
+		hs += 'left : 30%;';
+		hs += 'position : absolute;';
+		hs += 'top : 53%;';
+		hs += 'visibility : inherit;';
+		hs += 'width : 4.5vw;';
+		this._market.setAttribute('style', hs);
+		this._market.style[domTransform + 'Origin'] = '50% 50%';
+		me._market.ggIsActive = function () {
+			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
+				return this.parentNode.ggIsActive();
+			}
+			return false;
+		}
+		me._market.ggElementNodeId = function () {
+			if ((this.parentNode) && (this.parentNode.ggElementNodeId)) {
+				return this.parentNode.ggElementNodeId();
+			}
+			return me.player.getCurrentNode();
+		}
+		this._market.onclick = function () {
+			me._chemamap.ggVisible = !me._chemamap.ggVisible;
+			me._chemamap.style[domTransition] = 'none';
+			me._chemamap.style.visibility = ((me._chemamap.ggVisible) && (Number(me._chemamap.style.opacity) > 0 || !me._chemamap.style.opacity)) ? 'inherit' : 'hidden';
+
+			pushNode("{node96}", { "tilt": me.player.getTilt(), "pan": me.player.getPan(), "hfov": me.player.getFov() });
+
+			me.player.openNext("{node96}", "");
+		}
+		this._market.onmouseover = function () {
+			me.elementMouseOver['_market'] = true;
+		}
+		this._market.onmouseout = function () {
+			me.marketname.style[domTransition] = 'none';
+			me.marketname.style.visibility = 'hidden';
+			me.marketname.ggVisible = false;
+			me.elementMouseOver['_market'] = false;
+		}
+		this._market.ontouchend = function () {
+			me.elementMouseOver['_market'] = false;
+		}
+		this._market.ggUpdatePosition = function () {
+			this.style[domTransition] = 'none';
+			if (this.parentNode) {
+				var w = this.parentNode.offsetWidth;
+				this.style.left = (this.ggLeft - 0 + w / 2) + 'px';
+				var h = this.parentNode.offsetHeight;
+				this.style.top = (this.ggTop - 0 + h / 2) + 'px';
+			}
+		}
+		this.marketname = document.createElement('div');
+		this.marketname__text = document.createElement('div');
+		this.marketname.className = 'ggskin ggskin_textdiv';
+		this.marketname.ggTextDiv = this.marketname__text;
+		this.marketname.ggId = "PalatochName";
+		this.marketname.ggLeft = -53;
+		this.marketname.ggTop = -57;
+		this.marketname.ggParameter = { rx: 0, ry: 0, a: 0, sx: 1, sy: 1 };
+		this.marketname.ggVisible = false;
+		this.marketname.className = 'ggskin ggskin_text ';
+		this.marketname.ggType = 'text';
+		hs = '';
+		hs += 'height : 27px;';
+		hs += 'left : -53px;';
+		hs += 'position : absolute;';
+		hs += 'top : -57px;';
+		hs += 'visibility : hidden;';
+		hs += 'width : 108px;';
+		this.marketname.setAttribute('style', hs);
+		this.marketname.style[domTransform + 'Origin'] = '50% 50%';
+		hs = 'position:absolute;';
+		hs += 'left: 0px;';
+		hs += 'top:  0px;';
+		hs += 'width: 108px;';
+		hs += 'height: auto;';
+		hs += 'background: #ffffff;';
+		hs += 'background: rgba(255,255,255,0.784314);';
+		hs += 'border: 1px solid #000000;';
+		hs += 'border: 1px solid rgba(0,0,0,0.392157);';
+		hs += cssPrefix + 'background-clip: padding-box;';
+		hs += 'background-clip: padding-box;';
+		hs += 'color: #000000;';
+		hs += 'text-align: center;';
+		hs += 'white-space: pre-wrap;';
+		hs += 'padding: 0px 1px 0px 1px;';
+		hs += 'overflow: hidden;';
+		this.marketname__text.setAttribute('style', hs);
+		this.marketname__text.innerHTML = "Ярмарка";
+		this.marketname.appendChild(this.marketname__text);
+		me.marketname.ggIsActive = function () {
+			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
+				return this.parentNode.ggIsActive();
+			}
+			return false;
+		}
+		me.marketname.ggElementNodeId = function () {
+			if ((this.parentNode) && (this.parentNode.ggElementNodeId)) {
+				return this.parentNode.ggElementNodeId();
+			}
+			return me.player.getCurrentNode();
+		}
+		this.marketname.ggUpdatePosition = function () {
+			this.style[domTransition] = 'none';
+			if (this.parentNode) {
+				var w = this.parentNode.offsetWidth;
+				this.style.left = (this.ggLeft - 0 + w / 2) + 'px';
+				var h = this.parentNode.offsetHeight;
+				this.style.top = (this.ggTop - 0 + h / 2) + 'px';
+			}
+		}
+		this._market.appendChild(this.marketname);
+		this._chemamap.appendChild(this._market);
+
+
 		this._obrad = document.createElement('div');
 		this._obrad__img = document.createElement('img');
 		this._obrad__img.className = 'ggskin ggskin_button';
@@ -4488,262 +4735,6 @@ function pano2vrSkin(player, base) {
 		}
 		this._ploshad.appendChild(this._ploshadname);
 		this._chemamap.appendChild(this._ploshad);
-
-		this._trapes = document.createElement('div');
-		this._trapes__img = document.createElement('img');
-		this._trapes__img.className = 'ggskin ggskin_button';
-		this._trapes__img.setAttribute('src', basePath + 'MobilemapIconstAndText/Trapeznaya_txt.png');
-		this._trapes__img.setAttribute('style', 'position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;pointer-events:none;');
-		this._trapes__img.className = 'ggskin ggskin_button';
-		this._trapes__img['ondragstart'] = function () { return false; };
-		me.player.checkLoaded.push(this._trapes__img);
-		this._trapes.appendChild(this._trapes__img);
-		this._trapes.ggId = "Trapes";
-		this._trapes.ggParameter = { rx: 0, ry: 0, a: 0, sx: 1, sy: 1 };
-		this._trapes.ggVisible = true;
-		this._trapes.className = 'ggskin ggskin_button ';
-		this._trapes.ggType = 'button';
-		hs = '';
-		hs += 'height : 1.5vw;';
-		hs += 'left : 37%;';
-		hs += 'position : absolute;';
-		hs += 'top : 38%;';
-		hs += 'visibility : inherit;';
-		hs += 'width : 6vw;';
-		this._trapes.setAttribute('style', hs);
-		this._trapes.style[domTransform + 'Origin'] = '50% 50%';
-		me._trapes.ggIsActive = function () {
-			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
-				return this.parentNode.ggIsActive();
-			}
-			return false;
-		}
-		me._trapes.ggElementNodeId = function () {
-			if ((this.parentNode) && (this.parentNode.ggElementNodeId)) {
-				return this.parentNode.ggElementNodeId();
-			}
-			return me.player.getCurrentNode();
-		}
-		this._trapes.onclick = function () {
-			me._chemamap.ggVisible = !me._chemamap.ggVisible;
-			me._chemamap.style[domTransition] = 'none';
-			me._chemamap.style.visibility = ((me._chemamap.ggVisible) && (Number(me._chemamap.style.opacity) > 0 || !me._chemamap.style.opacity)) ? 'inherit' : 'hidden';
-
-			pushNode("{node76}", { "tilt": me.player.getTilt(), "pan": me.player.getPan(), "hfov": me.player.getFov() });
-
-			me.player.openNext("{node78}", "");
-		}
-		this._trapes.onmouseover = function () {
-			me.elementMouseOver['trapes'] = true;
-		}
-		this._trapes.onmouseout = function () {
-			me._trapesname.style[domTransition] = 'none';
-			me._trapesname.style.visibility = 'hidden';
-			me._trapesname.ggVisible = false;
-			me.elementMouseOver['trapes'] = false;
-		}
-		this._trapes.ontouchend = function () {
-			me.elementMouseOver['trapes'] = false;
-		}
-		this._trapes.ggUpdatePosition = function () {
-			this.style[domTransition] = 'none';
-			if (this.parentNode) {
-				var w = this.parentNode.offsetWidth;
-				this.style.left = (this.ggLeft - 0 + w / 2) + 'px';
-				var h = this.parentNode.offsetHeight;
-				this.style.top = (this.ggTop - 0 + h / 2) + 'px';
-			}
-		}
-		this._trapesname = document.createElement('div');
-		this._trapesname__text = document.createElement('div');
-		this._trapesname.className = 'ggskin ggskin_textdiv';
-		this._trapesname.ggTextDiv = this._trapesname__text;
-		this._trapesname.ggId = "Trapesname";
-		this._trapesname.ggLeft = -53;
-		this._trapesname.ggTop = -57;
-		this._trapesname.ggParameter = { rx: 0, ry: 0, a: 0, sx: 1, sy: 1 };
-		this._trapesname.ggVisible = false;
-		this._trapesname.className = 'ggskin ggskin_text ';
-		this._trapesname.ggType = 'text';
-		hs = '';
-		hs += 'height : 27px;';
-		hs += 'left : -53px;';
-		hs += 'position : absolute;';
-		hs += 'top : -57px;';
-		hs += 'visibility : hidden;';
-		hs += 'width : 108px;';
-		this._trapesname.setAttribute('style', hs);
-		this._trapesname.style[domTransform + 'Origin'] = '50% 50%';
-		hs = 'position:absolute;';
-		hs += 'left: 0px;';
-		hs += 'top:  0px;';
-		hs += 'width: 108px;';
-		hs += 'height: auto;';
-		hs += 'background: #ffffff;';
-		hs += 'background: rgba(255,255,255,0.784314);';
-		hs += 'border: 1px solid #000000;';
-		hs += 'border: 1px solid rgba(0,0,0,0.392157);';
-		hs += cssPrefix + 'background-clip: padding-box;';
-		hs += 'background-clip: padding-box;';
-		hs += 'color: #000000;';
-		hs += 'text-align: center;';
-		hs += 'white-space: pre-wrap;';
-		hs += 'padding: 0px 1px 0px 1px;';
-		hs += 'overflow: hidden;';
-		this._trapesname__text.setAttribute('style', hs);
-		this._trapesname__text.innerHTML = "\u0422\u0440\u0430\u043f\u0435\u0437\u043d\u0430\u044f";
-		this._trapesname.appendChild(this._trapesname__text);
-		me._trapesname.ggIsActive = function () {
-			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
-				return this.parentNode.ggIsActive();
-			}
-			return false;
-		}
-		me._trapesname.ggElementNodeId = function () {
-			if ((this.parentNode) && (this.parentNode.ggElementNodeId)) {
-				return this.parentNode.ggElementNodeId();
-			}
-			return me.player.getCurrentNode();
-		}
-		this._trapesname.ggUpdatePosition = function () {
-			this.style[domTransition] = 'none';
-			if (this.parentNode) {
-				var w = this.parentNode.offsetWidth;
-				this.style.left = (this.ggLeft - 0 + w / 2) + 'px';
-				var h = this.parentNode.offsetHeight;
-				this.style.top = (this.ggTop - 0 + h / 2) + 'px';
-			}
-		}
-		this._trapes.appendChild(this._trapesname);
-		this._chemamap.appendChild(this._trapes);
-
-		this._market = document.createElement('div');
-		this._market__img = document.createElement('img');
-		this._market__img.className = 'ggskin ggskin_button';
-		this._market__img.setAttribute('src', basePath + 'MobilemapIconstAndText/Market_txt.png');
-		this._market__img.setAttribute('style', 'position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;pointer-events:none;');
-		this._market__img.className = 'ggskin ggskin_button';
-		this._market__img['ondragstart'] = function () { return false; };
-		me.player.checkLoaded.push(this._market__img);
-		this._market.appendChild(this._market__img);
-		this._market.ggId = "PalatochGor";
-		this._market.ggParameter = { rx: 0, ry: 0, a: 0, sx: 1, sy: 1 };
-		this._market.ggVisible = true;
-		this._market.className = 'ggskin ggskin_button ';
-		this._market.ggType = 'button';
-		hs = '';
-		hs += 'height : 1.5vw;';
-		hs += 'left : 30%;';
-		hs += 'position : absolute;';
-		hs += 'top : 53%;';
-		hs += 'visibility : inherit;';
-		hs += 'width : 4.5vw;';
-		this._market.setAttribute('style', hs);
-		this._market.style[domTransform + 'Origin'] = '50% 50%';
-		me._market.ggIsActive = function () {
-			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
-				return this.parentNode.ggIsActive();
-			}
-			return false;
-		}
-		me._market.ggElementNodeId = function () {
-			if ((this.parentNode) && (this.parentNode.ggElementNodeId)) {
-				return this.parentNode.ggElementNodeId();
-			}
-			return me.player.getCurrentNode();
-		}
-		this._market.onclick = function () {
-			me._chemamap.ggVisible = !me._chemamap.ggVisible;
-			me._chemamap.style[domTransition] = 'none';
-			me._chemamap.style.visibility = ((me._chemamap.ggVisible) && (Number(me._chemamap.style.opacity) > 0 || !me._chemamap.style.opacity)) ? 'inherit' : 'hidden';
-
-			pushNode("{node96}", { "tilt": me.player.getTilt(), "pan": me.player.getPan(), "hfov": me.player.getFov() });
-
-			me.player.openNext("{node96}", "");
-		}
-		this._market.onmouseover = function () {
-			me.elementMouseOver['_market'] = true;
-		}
-		this._market.onmouseout = function () {
-			me.marketname.style[domTransition] = 'none';
-			me.marketname.style.visibility = 'hidden';
-			me.marketname.ggVisible = false;
-			me.elementMouseOver['_market'] = false;
-		}
-		this._market.ontouchend = function () {
-			me.elementMouseOver['_market'] = false;
-		}
-		this._market.ggUpdatePosition = function () {
-			this.style[domTransition] = 'none';
-			if (this.parentNode) {
-				var w = this.parentNode.offsetWidth;
-				this.style.left = (this.ggLeft - 0 + w / 2) + 'px';
-				var h = this.parentNode.offsetHeight;
-				this.style.top = (this.ggTop - 0 + h / 2) + 'px';
-			}
-		}
-		this.marketname = document.createElement('div');
-		this.marketname__text = document.createElement('div');
-		this.marketname.className = 'ggskin ggskin_textdiv';
-		this.marketname.ggTextDiv = this.marketname__text;
-		this.marketname.ggId = "PalatochName";
-		this.marketname.ggLeft = -53;
-		this.marketname.ggTop = -57;
-		this.marketname.ggParameter = { rx: 0, ry: 0, a: 0, sx: 1, sy: 1 };
-		this.marketname.ggVisible = false;
-		this.marketname.className = 'ggskin ggskin_text ';
-		this.marketname.ggType = 'text';
-		hs = '';
-		hs += 'height : 27px;';
-		hs += 'left : -53px;';
-		hs += 'position : absolute;';
-		hs += 'top : -57px;';
-		hs += 'visibility : hidden;';
-		hs += 'width : 108px;';
-		this.marketname.setAttribute('style', hs);
-		this.marketname.style[domTransform + 'Origin'] = '50% 50%';
-		hs = 'position:absolute;';
-		hs += 'left: 0px;';
-		hs += 'top:  0px;';
-		hs += 'width: 108px;';
-		hs += 'height: auto;';
-		hs += 'background: #ffffff;';
-		hs += 'background: rgba(255,255,255,0.784314);';
-		hs += 'border: 1px solid #000000;';
-		hs += 'border: 1px solid rgba(0,0,0,0.392157);';
-		hs += cssPrefix + 'background-clip: padding-box;';
-		hs += 'background-clip: padding-box;';
-		hs += 'color: #000000;';
-		hs += 'text-align: center;';
-		hs += 'white-space: pre-wrap;';
-		hs += 'padding: 0px 1px 0px 1px;';
-		hs += 'overflow: hidden;';
-		this.marketname__text.setAttribute('style', hs);
-		this.marketname__text.innerHTML = "Ярмарка";
-		this.marketname.appendChild(this.marketname__text);
-		me.marketname.ggIsActive = function () {
-			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
-				return this.parentNode.ggIsActive();
-			}
-			return false;
-		}
-		me.marketname.ggElementNodeId = function () {
-			if ((this.parentNode) && (this.parentNode.ggElementNodeId)) {
-				return this.parentNode.ggElementNodeId();
-			}
-			return me.player.getCurrentNode();
-		}
-		this.marketname.ggUpdatePosition = function () {
-			this.style[domTransition] = 'none';
-			if (this.parentNode) {
-				var w = this.parentNode.offsetWidth;
-				this.style.left = (this.ggLeft - 0 + w / 2) + 'px';
-				var h = this.parentNode.offsetHeight;
-				this.style.top = (this.ggTop - 0 + h / 2) + 'px';
-			}
-		}
-		this._market.appendChild(this.marketname);
-		this._chemamap.appendChild(this._market);
 
 
 		this._masterov = document.createElement('div');
