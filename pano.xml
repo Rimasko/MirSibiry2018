@@ -1713,7 +1713,7 @@
       <preview color="0x808080" strip="1"/>
     </input>
     <view pannorth="0" fovmode="0">
-      <start fov="70" pan="0" tilt="0"/>
+      <start fov="70" pan="33" tilt="-20"/>
       <min fov="5" pan="0" tilt="-90"/>
       <max fov="120" pan="360" tilt="90"/>
     </view>
@@ -1746,7 +1746,7 @@
       <preview color="0x808080" strip="1"/>
     </input>
     <view pannorth="0" fovmode="0">
-      <start fov="70" pan="0" tilt="0"/>
+      <start fov="70" pan="35" tilt="0"/>
       <min fov="5" pan="0" tilt="-90"/>
       <max fov="120" pan="360" tilt="90"/>
     </view>
@@ -1778,7 +1778,7 @@
       <preview color="0x808080" strip="1"/>
     </input>
     <view pannorth="0" fovmode="0">
-      <start fov="70" pan="0" tilt="0"/>
+      <start fov="70" pan="-92" tilt="0"/>
       <min fov="5" pan="0" tilt="-90"/>
       <max fov="120" pan="360" tilt="90"/>
     </view>
@@ -1863,7 +1863,7 @@
       <preview color="0x808080" strip="1"/>
     </input>
     <view pannorth="0" fovmode="0">
-      <start fov="70" pan="0" tilt="0"/>
+      <start fov="70" pan="-203" tilt="-39"/>
       <min fov="5" pan="0" tilt="-90"/>
       <max fov="120" pan="360" tilt="90"/>
     </view>
@@ -2310,7 +2310,7 @@
       <polystyle backgroundalpha="0.2509803921568627" borderalpha="1" backgroundcolor="0x0000ff" mode="0" handcursor="1" bordercolor="0x0000ff"/>
       <hotspot url="{node93}" pan="-59" id="Point01" tilt="1.13" title="" target="-63.9701/-1.01266/70" skinid="ht_node" description=""/>
       <hotspot url="{node96}" pan="119.38" id="Point02" tilt="-0.85" title="" target="" skinid="ht_node" description=""/>
-      <hotspot url="{node77}" pan="140.05" id="Point03" tilt="16.03" title="" target="-12.513/-16.2248/70" skinid="ht_node" description=""/>
+      <hotspot url="{node77}" pan="140.05" id="Point03" tilt="16.03" title="Общий вид" target="-12.513/-16.2248/70" skinid="ht_Obsh" description=""/>
     </hotspots>
     <media/>
     <transition zoomin="0" softedge="0" enabled="1" zoomoutpause="1" zoomspeed="2" zoomfov="50" zoomout="0" type="crossdissolve" blendtime="1" blendcolor="0x000000"/>
@@ -2443,7 +2443,7 @@
     <hotspots width="180" height="20" wordwrap="1">
       <label border="1" backgroundalpha="1" enabled="1" borderalpha="1" width="180" backgroundcolor="0xffffff" textalpha="1" height="20" textcolor="0x000000" background="1" borderradius="1" wordwrap="1" bordercolor="0x000000"/>
       <polystyle backgroundalpha="0.2509803921568627" borderalpha="1" backgroundcolor="0x0000ff" mode="0" handcursor="1" bordercolor="0x0000ff"/>
-      <hotspot url="{node93}" pan="-69.71" id="Point01" tilt="-0.64" title="" target="127.153/4.99086/70" skinid="ht_node" description=""/>
+      <hotspot url="{node117}" pan="-69.71" id="Point01" tilt="-0.64" title="" target="127.153/4.99086/70" skinid="ht_node" description=""/>
       <hotspot url="{node74}" pan="59.65" id="Point02" tilt="19.27" title="Палаточный лагерь" target="-37.2307/-4.77332/70" skinid="ht_GoFly" description=""/>
       <hotspot url="{node100}" pan="106.18" id="Point03" tilt="1.55" title="" target="" skinid="ht_node" description=""/>
     </hotspots>
@@ -2786,7 +2786,7 @@
       <preview color="0x808080" strip="1"/>
     </input>
     <view pannorth="0" fovmode="0">
-      <start fov="70" pan="0" tilt="0"/>
+      <start fov="70" pan="-52" tilt="0"/>
       <min fov="5" pan="0" tilt="-90"/>
       <max fov="120" pan="360" tilt="90"/>
     </view>
