@@ -2219,7 +2219,7 @@ function pano2vrSkin(player, base) {
 		hs += 'position : absolute;';
 		hs += 'top : -30px;';
 		hs += 'visibility : inherit;';
-		hs += 'width : 225px;';
+		hs += 'width : 230px;';
 		this._loading.setAttribute('style', hs);
 		this._loading.style[domTransform + 'Origin'] = '50% 50%';
 		me._loading.ggIsActive = function () {
@@ -2258,7 +2258,7 @@ function pano2vrSkin(player, base) {
 		hs += 'position : absolute;';
 		hs += 'top : -1px;';
 		hs += 'visibility : inherit;';
-		hs += 'width : 225px;';
+		hs += 'width : 230px;';
 		this._loadingbg.setAttribute('style', hs);
 		this._loadingbg.style[domTransform + 'Origin'] = '50% 50%';
 		me._loadingbg.ggIsActive = function () {
@@ -2291,7 +2291,7 @@ function pano2vrSkin(player, base) {
 		hs += 'position : absolute;';
 		hs += 'top : 12px;';
 		hs += 'visibility : inherit;';
-		hs += 'width : 220px;';
+		hs += 'width : 225px;';
 		this._loadingtext.setAttribute('style', hs);
 		this._loadingtext.style[domTransform + 'Origin'] = '0% 50%';
 		hs = 'position:absolute;';
