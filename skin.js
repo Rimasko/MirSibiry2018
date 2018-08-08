@@ -115,7 +115,7 @@ function pano2vrSkin(player, base) {
 		this._controller.ggType = 'container';
 		hs = '';
 		hs += 'height : 50vh;';
-		hs += 'left : 5px;';
+		hs += 'left : 0px;';
 		hs += 'position : absolute;';
 		hs += 'top : 25%;';
 		hs += 'visibility : inherit;';
@@ -144,13 +144,13 @@ function pano2vrSkin(player, base) {
 				me._controller.ggCurrentLogicStatePosition = newLogicStatePosition;
 				me._controller.style[domTransition] = 'left none, top none';
 				if (me._controller.ggCurrentLogicStatePosition == 0) {
-					me._controller.style.left = '5px';
-					me._controller.ggTop = -125;
+					me._controller.style.left = '0px';
+					//me._controller.ggTop = -125;
 					me._controller.ggUpdatePosition();
 				}
 				else {
-					me._controller.style.left = '5px';
-					me._controller.ggTop = -140;
+					me._controller.style.left = '0px';
+					//me._controller.ggTop = -140;
 					me._controller.ggUpdatePosition();
 				}
 			}
