@@ -1843,7 +1843,7 @@
       <polystyle backgroundalpha="0.2509803921568627" borderalpha="1" backgroundcolor="0x0000ff" mode="0" handcursor="1" bordercolor="0x0000ff"/>
       <hotspot url="{node77}" pan="162.97" id="Point01" tilt="8.92" title="Общий вид" target="18.1209/-19.5022/70" skinid="ht_Obsh" description=""/>
       <hotspot url="{node73}" pan="122.17" id="Point02" tilt="-7.54" title="Обрядовая поляна" target="-8.8189/-6.76876/70" skinid="ht_GoFly" description=""/>
-      <hotspot url="{node93}" pan="155.83" id="Point03" tilt="-14.12" title="" target="112.593/3.59266/70" skinid="ht_node" description=""/>
+      <hotspot url="{node117}" pan="155.83" id="Point03" tilt="-14.12" title="" target="112.593/3.59266/70" skinid="ht_node" description=""/>
       <hotspot url="{node100}" pan="128.66" id="Point04" tilt="-23.4" title="" target="" skinid="ht_node" description=""/>
       <hotspot url="{node101}" pan="147.65" id="Point05" tilt="-17.87" title="" target="" skinid="ht_node" description=""/>
       <hotspot url="{node99}" pan="39.82" id="Point06" tilt="-24.8" title="" target="-6.19526/-1.91045/70" skinid="ht_node" description=""/>
