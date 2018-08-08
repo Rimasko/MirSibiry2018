@@ -2491,7 +2491,7 @@
     <hotspots width="180" height="20" wordwrap="1">
       <label border="1" backgroundalpha="1" enabled="1" borderalpha="1" width="180" backgroundcolor="0xffffff" textalpha="1" height="20" textcolor="0x000000" background="1" borderradius="1" wordwrap="1" bordercolor="0x000000"/>
       <polystyle backgroundalpha="0.2509803921568627" borderalpha="1" backgroundcolor="0x0000ff" mode="0" handcursor="1" bordercolor="0x0000ff"/>
-      <hotspot url="{node78}" pan="-175.15" id="Point01" tilt="4.38" title="" target="14.7827/-3.02241/70" skinid="ht_node" description=""/>
+      <hotspot url="{node78}" pan="-175.15" id="Point01" tilt="4.38" title="Трапезная" target="14.7827/-3.02241/70" skinid="ht_GoFly" description=""/>
       <hotspot url="{node105}" pan="-155.51" id="Point02" tilt="-3.77" title="" target="145.494/-5.74399/70" skinid="ht_node" description=""/>
       <hotspot url="{node77}" pan="-132.18" id="Point03" tilt="19.05" title="Общий вид" target="114.332/-24.9907/70" skinid="ht_Obsh" description=""/>
       <hotspot url="{node91}" pan="-102.25" id="Point04" tilt="0.67" title="" target="-70.6633/1.39643/70" skinid="ht_node" description=""/>
