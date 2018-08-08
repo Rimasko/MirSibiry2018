@@ -1227,7 +1227,7 @@ function pano2vrSkin(player, base) {
 		hs += 'position : absolute;';
 		hs += 'top : 0%;';
 		hs += 'visibility : hidden;';
-		hs += 'width : 102%;';
+		hs += 'width : 103%;';
 		this._button_image_normalscreen.setAttribute('style', hs);
 		this._button_image_normalscreen.style[domTransform + 'Origin'] = '50% 50%';
 		me._button_image_normalscreen.ggIsActive = function () {
@@ -1667,7 +1667,7 @@ function pano2vrSkin(player, base) {
 		hs += 'position : absolute;';
 		hs += 'top : 13%;';
 		hs += 'visibility : inherit;';
-		hs += 'width : 72%;';
+		hs += 'width : 71%;';
 		this._showpam.setAttribute('style', hs);
 		this._showpam.style[domTransform + 'Origin'] = '50% 50%';
 		me._showpam.ggIsActive = function () {
@@ -1857,7 +1857,7 @@ function pano2vrSkin(player, base) {
 		hs += 'position : absolute;';
 		hs += 'top : 61%;';
 		hs += 'visibility : inherit;';
-		hs += 'width : 80%;';
+		hs += 'width : 79%;';
 		this._goprev.setAttribute('style', hs);
 		this._goprev.style[domTransform + 'Origin'] = '50% 50%';
 		me._goprev.ggIsActive = function () {
@@ -4739,7 +4739,7 @@ function pano2vrSkin(player, base) {
 		}
 		this._obrad.appendChild(this._obradname);
 		this._chemamap.appendChild(this._obrad);
-		
+
 		this._guavlenok = document.createElement('div');
 		this._guavlenok__img = document.createElement('img');
 		this._guavlenok__img.className = 'ggskin ggskin_button';
