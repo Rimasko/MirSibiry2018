@@ -4878,7 +4878,7 @@ function pano2vrSkin(player, base) {
 
 		this.MirSibiry = document.createElement('img');
 		this.MirSibiry.setAttribute('src', basePath + 'MobilemapIconstAndText/MirSibiryLogotip.png');
-		this.MirSibiry.setAttribute('style', 'position: absolute;top: 0px;left: 90vw;width: 10vw;height: 10vw;-webkit-user-drag:none;pointer-events:none;');
+		this.MirSibiry.setAttribute('style', 'position: absolute;top: 2vw;left: 88vw;width: 10vw;height: auto;-webkit-user-drag:none;pointer-events:none;');
 		
 		this.divSkin.appendChild(this.MirSibiry);
 
