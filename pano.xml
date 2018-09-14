@@ -1911,7 +1911,7 @@
     
       
       <hotspot url="{node70}" pan="29.08" id="Point01" tilt="-36.61" title="Главная сцена" target="66.0991/-48.7501/70" skinid="ht_node" description=""/>
-      <hotspot url="{node72}" pan="-106.46" id="Point03" tilt="-24.87" title="Т/Б Журавленок" target="3.16378/-26.6528/70" skinid="ht_node" description=""/>
+      <hotspot url="{node72}" pan="-106.46" id="Point03" tilt="-24.87" title="Т/Б Журавленок" target="3.16378/-117.9/70" skinid="ht_node" description=""/>
      
         <hotspot url="{node96}" pan="-168.86" id="Point13" tilt="-43.88" title="Ярмарка" target="36.1421/-1.75683/70" skinid="ht_node" description=""/>
        <hotspot url="{node117}" pan="177.25" id="Point12" tilt="-26.51" title="Выход с ярмарки" target="-78.7213/-2.58284/70" skinid="ht_node" description=""/>
