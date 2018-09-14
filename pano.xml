@@ -1778,7 +1778,7 @@
       <preview color="0x808080" strip="1"/>
     </input>
     <view pannorth="0" fovmode="0">
-      <start fov="70" pan="-92" tilt="0"/>
+      <start fov="70" pan="-117.9" tilt="0"/>
       <min fov="5" pan="0" tilt="-90"/>
       <max fov="120" pan="360" tilt="90"/>
     </view>
@@ -1813,7 +1813,7 @@
       <label border="1" backgroundalpha="1" enabled="1" borderalpha="1" width="180" backgroundcolor="0xffffff" textalpha="1" height="20" textcolor="0x000000" background="1" borderradius="1" wordwrap="1" bordercolor="0x000000"/>
       <polystyle backgroundalpha="0.2509803921568627" borderalpha="1" backgroundcolor="0x0000ff" mode="0" handcursor="1" bordercolor="0x0000ff"/>
       <hotspot url="{node77}" pan="58.8" id="Point01" tilt="10.91" title="Общий вид" target="45.0303/-8.81799/70" skinid="ht_Obsh" description=""/>
-      <hotspot url="{node72}" pan="7.67" id="Point02" tilt="-0.02" title="Журавленок" target="88.7924/-8.044/70" skinid="ht_GoFly" description=""/>
+      <hotspot url="{node72}" pan="7.67" id="Point02" tilt="-0.02" title="Т/Б Журавленок" target="88.7924/-8.044/70" skinid="ht_GoFly" description=""/>
       <hotspot url="{node74}" pan="150.98" id="Point03" tilt="18.86" title="Палаточный лагерь" target="-35.708/-14.5288/70" skinid="ht_GoFly" description=""/>
       <hotspot url="{node97}" pan="41.41" id="Point04" tilt="-72.57" title="" target="12.1933/-27.7141/70" skinid="ht_node" description=""/>
       <hotspot url="{node98}" pan="6.99" id="Point05" tilt="-56.06" title="" target="167.775/1.13863/70" skinid="ht_node" description=""/>
@@ -1911,10 +1911,10 @@
     
       
       <hotspot url="{node70}" pan="29.08" id="Point01" tilt="-36.61" title="Главная сцена" target="66.0991/-48.7501/70" skinid="ht_node" description=""/>
-      <hotspot url="{node72}" pan="-106.46" id="Point03" tilt="-24.87" title="Журавленок" target="3.16378/-26.6528/70" skinid="ht_node" description=""/>
+      <hotspot url="{node72}" pan="-106.46" id="Point03" tilt="-24.87" title="Т/Б Журавленок" target="3.16378/-26.6528/70" skinid="ht_node" description=""/>
      
-        <hotspot url="{node96}" pan="-168.86" id="Point13" tilt="-43.88" title="Рынок" target="36.1421/-1.75683/70" skinid="ht_node" description=""/>
-       <hotspot url="{node117}" pan="177.25" id="Point12" tilt="-26.51" title="Выход с рынка" target="-78.7213/-2.58284/70" skinid="ht_node" description=""/>
+        <hotspot url="{node96}" pan="-168.86" id="Point13" tilt="-43.88" title="Ярмарка" target="36.1421/-1.75683/70" skinid="ht_node" description=""/>
+       <hotspot url="{node117}" pan="177.25" id="Point12" tilt="-26.51" title="Выход с ярмарки" target="-78.7213/-2.58284/70" skinid="ht_node" description=""/>
      <hotspot url="{node73}" pan="-158.74" id="Point04" tilt="-20.65" title="Обрядовая поляна" target="-156.959/-28.7643/70" skinid="ht_node" description=""/>
       <hotspot url="{node74}" pan="171.18" id="Point05" tilt="-17.16" title="Палаточный лагерь" target="-9.27101/-22.293/70" skinid="ht_node" description=""/>
       <hotspot url="{node78}" pan="71.63" id="Point06" tilt="-64.09" title="Трапезная" target="-174.854/-1.23183/70" skinid="ht_node" description=""/>

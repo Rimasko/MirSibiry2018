@@ -4843,7 +4843,7 @@ function pano2vrSkin(player, base) {
 		hs += 'padding: 0px 1px 0px 1px;';
 		hs += 'overflow: hidden;';
 		this._guravname__text.setAttribute('style', hs);
-		this._guravname__text.innerHTML = "\u0416\u0443\u0440\u0430\u0432\u043b\u0435\u043d\u043e\u043a";
+		this._guravname__text.innerHTML = "Т/Б Журавленок";
 		this._guravname.appendChild(this._guravname__text);
 		me._guravname.ggIsActive = function () {
 			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
@@ -4868,6 +4868,69 @@ function pano2vrSkin(player, base) {
 		}
 		this._guavlenok.appendChild(this._guravname);
 		this._chemamap.appendChild(this._guavlenok);
+
+
+		this._buttonCloseMap = document.createElement('div');
+		this._buttonCloseMap_img = document.createElement('img');
+		this._buttonCloseMap_img.className = 'ggskin ggskin_button';
+		this._buttonCloseMap_img.setAttribute('src', basePath + 'images/closemap_Off.png');
+		this._buttonCloseMap_img.setAttribute('style', 'position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;pointer-events:none;');
+		this._buttonCloseMap_img.className = 'ggskin ggskin_button';
+		this._buttonCloseMap_img['ondragstart'] = function () { return false; };
+		me.player.checkLoaded.push(this._buttonCloseMap_img);
+		this._buttonCloseMap.appendChild(this._buttonCloseMap_img);
+		this._buttonCloseMap.ggId = "Obrad";
+		this._buttonCloseMap.ggParameter = { rx: 0, ry: 0, a: 0, sx: 1, sy: 1 };
+		this._buttonCloseMap.ggVisible = true;
+		this._buttonCloseMap.className = 'ggskin ggskin_button ';
+		this._buttonCloseMap.ggType = 'button';
+		hs = '';
+		hs += 'height : 2.2vw;';
+		hs += 'left : 100.7%;';
+		hs += 'position : absolute;';
+		hs += 'top : 0%;';
+		hs += 'visibility : inherit;';
+		hs += 'width : 2.2vw;';
+		this._buttonCloseMap.setAttribute('style', hs);
+		this._buttonCloseMap.style[domTransform + 'Origin'] = '50% 50%';
+		me._obrad.ggIsActive = function () {
+			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
+				return this.parentNode.ggIsActive();
+			}
+			return false;
+		}
+		me._buttonCloseMap.ggElementNodeId = function () {
+			if ((this.parentNode) && (this.parentNode.ggElementNodeId)) {
+				return this.parentNode.ggElementNodeId();
+			}
+			return me.player.getCurrentNode();
+		}
+		this._buttonCloseMap.onclick = function () {
+			if ((me.player.getViewerSize().width <= 600) || (me.player.getIsMobile() == true)) {
+				if (me.mapforMobile.style.visibility === 'hidden')
+					me.mapforMobile.style.visibility = 'inherit';
+				else
+					me.mapforMobile.style.visibility = 'hidden';
+			}
+			else {
+				me._chemamap.ggVisible = !me._chemamap.ggVisible;
+				me._chemamap.style[domTransition] = 'none';
+				me._chemamap.style.visibility = ((me._chemamap.ggVisible) && (Number(me._chemamap.style.opacity) > 0 || !me._chemamap.style.opacity)) ? 'inherit' : 'hidden';
+			}
+		}
+
+		
+		
+		this._buttonCloseMap.ggUpdatePosition = function () {
+			this.style[domTransition] = 'none';
+			if (this.parentNode) {
+				var w = this.parentNode.offsetWidth;
+				this.style.left = (this.ggLeft - 0 + w / 2) + 'px';
+				var h = this.parentNode.offsetHeight;
+				this.style.top = (this.ggTop - 0 + h / 2) + 'px';
+			}
+		}
+		this._chemamap.appendChild(this._buttonCloseMap);
 		this.divSkin.appendChild(this._chemamap);
 
 		this.mapforMobile = document.createElement('div');
