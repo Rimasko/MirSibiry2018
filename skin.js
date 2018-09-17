@@ -3452,7 +3452,7 @@ function pano2vrSkin(player, base) {
 		this._palatochgor = document.createElement('div');
 		this._palatochgor__img = document.createElement('img');
 		this._palatochgor__img.className = 'ggskin ggskin_button';
-		this._palatochgor__img.setAttribute('src', basePath + 'MobilemapIconstAndText/Camp_txt.png');
+		this._palatochgor__img.setAttribute('src', basePath + 'MobilemapIconstAndText/Camp_town_txt.png');
 		this._palatochgor__img.setAttribute('style', 'position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;-webkit-user-drag:none;pointer-events:none;');
 		this._palatochgor__img.className = 'ggskin ggskin_button';
 		this._palatochgor__img['ondragstart'] = function () { return false; };
@@ -3551,7 +3551,7 @@ function pano2vrSkin(player, base) {
 		hs += 'padding: 0px 1px 0px 1px;';
 		hs += 'overflow: hidden;';
 		this._palatochname__text.setAttribute('style', hs);
-		this._palatochname__text.innerHTML = "Палаточный лагерь";
+		this._palatochname__text.innerHTML = "Палаточный городок";
 		this._palatochname.appendChild(this._palatochname__text);
 		me._palatochname.ggIsActive = function () {
 			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
